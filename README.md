@@ -28,6 +28,6 @@ That said, I’m always building, experimenting, and learning, even if not every
 
 ### Outside of code
 - Running, lifting, skiing, playing soccer
-- Finance, and Studio art minor
+- Finance, and Studio art minor - can check out some of my photography at https://sahilsaoji.com/
 
 If you want to chat about products, engineering, or building things that actually matter, feel free to reach out.
