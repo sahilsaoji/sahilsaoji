@@ -70,6 +70,16 @@ export const collections: PhotoCollection[] = [
     ]
   },
   {
+    name: "Threads of Arranged Marriage",
+    slug: "threads-of-arranged-marriage",
+    cover: "Threads of Arranged Marriage/FullSizeRender.jpeg",
+    photos: [
+      "Threads of Arranged Marriage/FullSizeRender.jpeg",
+      "Threads of Arranged Marriage/IMG_0638.jpeg",
+      "Threads of Arranged Marriage/IMG_8233.jpeg"
+    ]
+  },
+  {
     name: "Pandemic Prom",
     slug: "pandemic-prom",
     cover: "Pandemic Prom/1. Girl Group/StFrancisPromPics-82.jpg",
@@ -107,15 +117,6 @@ export const collections: PhotoCollection[] = [
       "Bloody Moment/Bloody Moment-5.jpg",
       "Bloody Moment/Bloody Moment-6.jpg",
       "Bloody Moment/ColorStudy-2.jpg"
-    ]
-  },
-  {
-    name: "Feeling Blue",
-    slug: "feeling-blue",
-    cover: "Feeling Blue/ColorStudyFinal-7.jpg",
-    photos: [
-      "Feeling Blue/ColorStudyFinal-7.jpg",
-      "Feeling Blue/ColorStudyFinal-8.jpg"
     ]
   },
   {
@@ -161,15 +162,29 @@ export const collections: PhotoCollection[] = [
     photos: [
       "Alphabet Project/Alphabet Project.jpg"
     ]
+  },
+  {
+    name: "Fragmented Faces",
+    slug: "fragmented-faces",
+    cover: "Fragmented Faces/IMG_2183.jpeg",
+    photos: [
+      "Fragmented Faces/IMG_2170.jpeg",
+      "Fragmented Faces/IMG_2183.jpeg"
+    ]
   }
 ];
 
 export const standalonePhotos: string[] = [
-  "Glasses.jpg",
   "IndiaWall4.jpg",
+  "Sahil Saoji.jpg",
   "Studio Art Photography 1.jpg",
   "Studio Art Photography 3.jpg",
   "Studio Art Photography 4.jpg",
-  "Studio Art Photography 5.jpg",
-  "Studio Art Photography 6.jpg"
+  "Studio Art Photography 6.jpg",
+  "Landscapes-9.jpg",
+  "steelWoolCentered-5.png",
+  "SouthAsianHairMilap.png",
+  "SouthAsianHairSahil.png",
+  "SouthAsianHairVishnu.png",
+  "Fragmented Faces.jpeg"
 ];
