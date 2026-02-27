@@ -1,35 +1,34 @@
-# Photography Portfolio
+# Hey, I’m Sahil 
 
-Personal photography website built with React + TypeScript + Vite.
+I’m a software engineer who likes building things that feel good to use and make sense to people.
 
-## Adding Photos
+I care a lot about:
+- Thoughtful product design
+- Clean, maintainable systems
+- Bridging engineering, design, and business
+- Building tools that help humans do better work
 
-1. Add your photos to `public/photos/`
-2. Update `src/data/photos.json` with metadata:
+I’ve worked across startups and larger companies, touching everything from frontend product features to backend services and platforms.
 
-```json
-[
-  {
-    "filename": "your-photo.jpg",
-    "title": "Photo Title",
-    "tags": ["landscape", "nature"],
-    "description": "Optional description"
-  }
-]
-```
+### What I’m usually thinking about
+- How developers actually experience the tools they use
+- Where AI can *reduce* cognitive load instead of adding to it
+- Building systems that scale technically **and** socially
+- Making software that’s powerful without being intimidating
 
-3. Push to GitHub - the site deploys automatically
+### Tech I enjoy working with
+- JavaScript / TypeScript, React
+- Python, FastAPI
+- APIs, microservices, and platform work
+- Human-centered product engineering
 
-## Development
+### About my GitHub activity
+A lot of my recent work lives in private repos or behind NDAs — turns out some companies don’t love it when you ship their production code to GitHub 😄  
+That said, I’m always building, experimenting, and learning — even if not everything shows up here.
 
-```bash
-npm install
-npm run dev
-```
+### Outside of code
+- Runner + lifter (Boston Marathon is the dream)
+- Photographer and studio art minor
+- Big believer in empathy, curiosity, and growth
 
-## Build
-
-```bash
-npm run build
-npm run preview
-```
+If you want to chat about products, engineering, or building things that actually matter, feel free to reach out.
