@@ -4,15 +4,8 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      // Single Page App redirect for GitHub Pages
-      // Stores the current path and redirects to base
-      // The main app will then handle the route
-      const basePath = '/sahilsaoji/';
-      const fullPath = window.location.pathname + window.location.search + window.location.hash;
-      // Store path relative to base
-      const relativePath = fullPath.replace(basePath, '/');
-      sessionStorage.setItem('redirectPath', relativePath);
-      window.location.replace(basePath);
+      // SPA fallback for custom domain (sahilsaoji.com): send missing paths to root
+      window.location.replace('/');
     </script>
   </head>
   <body>
