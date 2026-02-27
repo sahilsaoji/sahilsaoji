@@ -82,7 +82,7 @@ export function Collection() {
               whileHover={{ zIndex: 1 }}
             >
               <AnimatedImage
-                src={`/photos/${photo}`}
+                src={`${import.meta.env.BASE_URL}photos/${photo}`}
                 alt={`${collection.name} ${index + 1}`}
                 index={index}
               />

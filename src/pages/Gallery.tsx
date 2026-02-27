@@ -33,7 +33,7 @@ export function Gallery() {
                   transition={{ duration: 0.4, ease: easeOut }}
                 >
                   <AnimatedImage
-                    src={`/photos/${collection.cover}`}
+                    src={`${import.meta.env.BASE_URL}photos/${collection.cover}`}
                     alt={collection.name}
                     index={index}
                   />

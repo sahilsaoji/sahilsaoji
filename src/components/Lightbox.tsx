@@ -69,7 +69,7 @@ export function Lightbox({ photo, onClose, onPrev, onNext }: LightboxProps) {
       >
         <motion.img
           key={photo.filename}
-          src={`/photos/${photo.filename}`}
+          src={`${import.meta.env.BASE_URL}photos/${photo.filename}`}
           alt={photo.title}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

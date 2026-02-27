@@ -77,7 +77,7 @@ export function Home() {
                   className="grid-item collection-preview"
                 >
                   <AnimatedImage
-                    src={`/photos/${collection.cover}`}
+                    src={`${import.meta.env.BASE_URL}photos/${collection.cover}`}
                     alt={collection.name}
                     index={index}
                   />
@@ -103,7 +103,7 @@ export function Home() {
                 viewport={{ once: true }}
               >
                 <AnimatedImage
-                  src={`/photos/${photo}`}
+                  src={`${import.meta.env.BASE_URL}photos/${photo}`}
                   alt={photo.replace(/\.[^/.]+$/, '')}
                   index={collections.length + index}
                 />

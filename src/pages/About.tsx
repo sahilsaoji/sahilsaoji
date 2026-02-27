@@ -21,7 +21,7 @@ export function About() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            <img src="/photos/Glasses.jpg" alt="Sahil Saoji" />
+            <img src={`${import.meta.env.BASE_URL}photos/Glasses.jpg`} alt="Sahil Saoji" />
           </motion.div>
 
           <motion.div
