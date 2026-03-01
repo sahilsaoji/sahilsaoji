@@ -1,20 +1,15 @@
-/* ============================================
-   PROJECTS SITE — fully self-contained styles
-   Change this file only; no shared App.css.
-   ============================================ */
-
+/* "/projects" page only. Theme: strict B&W — no green, no other colors */
 .projects-site {
-  --proj-bg: #ffffff;
-  --proj-bg-secondary: #f5f5f5;
-  --proj-text: #000000;
-  --proj-text-secondary: #333333;
-  --proj-text-muted: #666666;
-  --proj-border: #e0e0e0;
+  --proj-bg: rgb(255, 255, 255);
+  --proj-bg-secondary: rgb(245, 245, 245);
+  --proj-text: rgb(0, 0, 0);
+  --proj-text-secondary: rgb(51, 51, 51);
+  --proj-text-muted: rgb(102, 102, 102);
+  --proj-border: rgb(224, 224, 224);
 
   min-height: 100vh;
-  width: 100%;
-  background: var(--proj-bg);
-  color: var(--proj-text);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .projects-site section {
@@ -22,9 +17,10 @@
   min-height: 100vh;
   padding: 8rem 5vw;
   overflow: hidden;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
-/* Navigation */
 .projects-site .nav {
   position: fixed;
   top: 0;
@@ -80,7 +76,6 @@
   background: var(--proj-text);
 }
 
-/* Hero */
 .projects-site .hero {
   display: flex;
   align-items: center;
@@ -122,7 +117,6 @@
   max-width: 500px;
 }
 
-/* Software / Projects section */
 .projects-site .software {
   display: flex;
   flex-direction: column;
@@ -227,7 +221,6 @@
   letter-spacing: 0.02em;
 }
 
-/* Experience section */
 .projects-site .experience {
   min-height: auto;
   padding-top: 8rem;
@@ -268,7 +261,6 @@
   color: var(--proj-text-muted);
 }
 
-/* About & Contact */
 .projects-site .about-contact {
   display: flex;
   flex-direction: column;
@@ -276,7 +268,8 @@
   text-align: center;
   min-height: auto;
   padding: 6rem 5vw;
-  background: var(--proj-bg);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .projects-site .about-section {
@@ -344,13 +337,12 @@
   border-color: var(--proj-text-secondary);
 }
 
-/* Footer */
 .projects-site footer {
   padding: 3rem;
   text-align: center;
-  background: var(--proj-bg);
-  border-top: 1px solid var(--proj-border);
-  color: var(--proj-text-muted);
+  background: rgb(255, 255, 255);
+  border-top: 1px solid rgb(224, 224, 224);
+  color: rgb(102, 102, 102);
   font-size: 0.85rem;
 }
 
@@ -388,13 +380,13 @@
 .projects-site .artist-thesis h3 {
   font-size: 1.2rem;
   margin: 0 0 1rem;
-  color: var(--proj-text);
+  color: rgb(0, 0, 0);
 }
 
 .projects-site .artist-thesis p {
   font-size: 0.9rem;
   line-height: 1.7;
-  color: var(--proj-text-secondary);
+  color: rgb(51, 51, 51);
   margin: 0 0 1rem;
 }
 
@@ -402,7 +394,6 @@
   margin-bottom: 0;
 }
 
-/* Projects site — mobile */
 @media (max-width: 768px) {
   .projects-site section {
     padding: 5rem 1.25rem;

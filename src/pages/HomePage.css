@@ -1,19 +1,35 @@
-/* Base — Art theme (light + #8DAA91) for hero, portfolio, contact */
+/* "/" (home) page only. Theme: Art (sage) by default; .app section.software = B&W */
 .app {
+  --app-bg: rgb(246, 248, 246);
+  --app-text: rgb(141, 170, 145);
+  --app-text-alt: rgb(90, 107, 92);
+  --app-muted: rgb(122, 138, 123);
+  --app-border: rgb(197, 213, 198);
+
   min-height: 100vh;
-  background: #f6f8f6;
-  color: #8DAA91;
+  background: var(--app-bg);
+  color: var(--app-text);
 }
 
-section {
+.app section.software {
+  --app-bg: rgb(255, 255, 255);
+  --app-text: rgb(0, 0, 0);
+  --app-text-alt: rgb(51, 51, 51);
+  --app-muted: rgb(102, 102, 102);
+  --app-border: rgb(224, 224, 224);
+
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+.app section {
   position: relative;
   min-height: 100vh;
   padding: 8rem 5vw;
   overflow: hidden;
 }
 
-/* Navigation — neutral B&W so it works on both sections */
-.nav {
+.app .nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -25,57 +41,56 @@ section {
   padding: 1.5rem 5vw;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--app-border);
 }
 
-.nav-logo {
+.app .nav-logo {
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
-.nav-links {
+.app .nav-links {
   display: flex;
   gap: 2rem;
 }
 
-.nav-links button {
+.app .nav-links button {
   background: none;
   border: none;
   font-family: inherit;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #666666;
+  color: var(--app-muted);
   cursor: pointer;
   padding: 0.5rem 0;
   position: relative;
   transition: color 0.3s ease;
 }
 
-.nav-links button:hover,
-.nav-links button.active {
-  color: #000000;
+.app .nav-links button:hover,
+.app .nav-links button.active {
+  color: rgb(0, 0, 0);
 }
 
-.nav-links button.active::after {
+.app .nav-links button.active::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 2px;
-  background: #000000;
+  background: rgb(0, 0, 0);
 }
 
-/* Scattered Images — softer in Art sections, neutral in Projects */
-.scattered-image {
+.app .scattered-image {
   position: absolute;
   z-index: 0;
   pointer-events: none;
 }
 
-.scattered-image img {
+.app .scattered-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -84,45 +99,43 @@ section {
   transition: box-shadow 0.4s ease;
 }
 
-.scattered-image:hover img {
+.app .scattered-image:hover img {
   box-shadow: 0 20px 50px rgba(141, 170, 145, 0.28), 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Projects section: B&W shadow for scattered images */
-.software .scattered-image img {
+.app .software .scattered-image img {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.software .scattered-image:hover img {
+.app .software .scattered-image:hover img {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Hero — Art theme (light bg + #8DAA91) */
-.hero {
+.app .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   padding-top: 6rem;
-  background: #f6f8f6;
+  background: var(--app-bg);
 }
 
-.hero-content {
+.app .hero-content {
   position: relative;
   z-index: 1;
   text-align: center;
 }
 
-.hero h1 {
+.app .hero h1 {
   font-size: clamp(4rem, 15vw, 12rem);
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: -0.04em;
   margin: 0;
-  color: #8DAA91;
+  color: var(--app-text);
 }
 
-.hero-tagline {
+.app .hero-tagline {
   font-size: clamp(1.2rem, 3vw, 2rem);
   font-weight: 400;
   letter-spacing: 0.15em;
@@ -132,42 +145,41 @@ section {
   align-items: center;
   justify-content: center;
   gap: 0.5em;
-  color: #8DAA91;
+  color: var(--app-text);
 }
 
-.ampersand {
-  color: #7a8a7b;
+.app .ampersand {
+  color: var(--app-muted);
 }
 
-.hero-bio {
+.app .hero-bio {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #5a6b5c;
+  color: var(--app-text-alt);
   margin-top: 2rem;
   max-width: 500px;
 }
 
-/* Software Section — Front End Projects: full black & white */
-.software {
+.app .software {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 10rem;
-  background: #ffffff;
+  background: var(--app-bg);
 }
 
-.software h2 {
+.app .software h2 {
   font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: 3rem;
-  color: #000000;
-  border-bottom: 1px solid #e0e0e0;
+  color: var(--app-text);
+  border-bottom: 1px solid var(--app-border);
   padding-bottom: 1rem;
   display: inline-block;
 }
 
-.projects-grid {
+.app .projects-grid {
   position: relative;
   z-index: 1;
   display: grid;
@@ -176,28 +188,28 @@ section {
   max-width: 1000px;
 }
 
-.project-card {
+.app .project-card {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
   aspect-ratio: 4/3;
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
+  background: var(--app-bg);
+  border: 1px solid var(--app-border);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
 }
 
-.project-card:hover {
+.app .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
-.project-image {
+.app .project-image {
   width: 100%;
   height: 100%;
 }
 
-.project-image img {
+.app .project-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -205,15 +217,15 @@ section {
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.project-card:hover .project-image img {
+.app .project-card:hover .project-image img {
   transform: scale(1.08);
 }
 
-.project-overlay {
+.app .project-overlay {
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.96);
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--app-border);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,60 +236,59 @@ section {
   transition: opacity 0.4s ease;
 }
 
-.project-card:hover .project-overlay {
+.app .project-card:hover .project-overlay {
   opacity: 1;
 }
 
-.project-title {
+.app .project-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #000000;
+  color: var(--app-text);
   margin: 0 0 0.5rem;
 }
 
-.project-description {
+.app .project-description {
   font-size: 0.9rem;
   line-height: 1.5;
-  color: #333333;
+  color: var(--app-text-alt);
   margin: 0 0 0.75rem;
 }
 
-.project-link-hint {
+.app .project-link-hint {
   font-size: 0.75rem;
-  color: #000000;
-  border: 1px solid #000000;
+  color: var(--app-text);
+  border: 1px solid var(--app-text);
   padding: 0.35rem 0.65rem;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
-/* Portfolio Section — Art theme (light + #8DAA91) */
-.portfolio {
+.app .portfolio {
   min-height: auto;
   padding-top: 10rem;
-  background: #f6f8f6;
+  background: var(--app-bg);
 }
 
-.portfolio h2 {
+.app .portfolio h2 {
   font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: 3rem;
-  color: #8DAA91;
-  border-bottom: 1px solid #c5d5c6;
+  color: var(--app-text);
+  border-bottom: 1px solid var(--app-border);
   padding-bottom: 1rem;
   display: inline-block;
 }
 
-.collections-list {
+.app .collections-list {
   max-width: 900px;
 }
 
-.collection-folder {
-  border-bottom: 1px solid #c5d5c6;
+.app .collection-folder {
+  border-bottom: 1px solid var(--app-border);
 }
 
-.collection-header {
+.app .collection-header {
   width: 100%;
   display: flex;
   align-items: center;
@@ -289,199 +300,183 @@ section {
   font-family: inherit;
   text-align: left;
   transition: opacity 0.3s ease;
-  color: #8DAA91;
+  color: var(--app-text);
 }
 
-.collection-header:hover {
+.app .collection-header:hover {
   opacity: 0.7;
 }
 
-.collection-name {
+.app .collection-name {
   font-size: 1.3rem;
   font-weight: 500;
-  color: #8DAA91;
+  color: var(--app-text);
   flex: 1;
 }
 
-.collection-count {
+.app .collection-count {
   font-size: 0.9rem;
-  color: #7a8a7b;
+  color: var(--app-muted);
 }
 
-.collection-toggle {
+.app .collection-toggle {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #7a8a7b;
+  color: var(--app-muted);
   width: 1.5rem;
   text-align: center;
 }
 
-.collection-grid {
+.app .collection-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
   padding-bottom: 2rem;
 }
 
-.gallery-item {
+.app .gallery-item {
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 4px;
   cursor: pointer;
-  border: 1px solid #c5d5c6;
+  border: 1px solid var(--app-border);
 }
 
-.gallery-item img {
+.app .gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.gallery-item:hover img {
+.app .gallery-item:hover img {
   transform: scale(1.05);
 }
 
-/* Contact — Art theme */
-.contact {
+.app .contact {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   min-height: 60vh;
-  background: #f6f8f6;
+  background: var(--app-bg);
 }
 
-.contact h2 {
+.app .contact h2 {
   font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: 3rem;
-  color: #8DAA91;
+  color: var(--app-text);
 }
 
-.contact > div {
+.app .contact > div {
   position: relative;
   z-index: 1;
 }
 
-.contact-subtitle {
+.app .contact-subtitle {
   font-size: 1rem;
-  color: #5a6b5c;
+  color: var(--app-text-alt);
   margin: 0 0 2rem;
   max-width: 400px;
 }
 
-.contact-links {
+.app .contact-links {
   display: flex;
   gap: 3rem;
   justify-content: center;
 }
 
-.contact-links a {
+.app .contact-links a {
   font-size: 1.1rem;
-  color: #8DAA91;
+  color: var(--app-text);
   text-decoration: none;
   padding-bottom: 0.25rem;
-  border-bottom: 1px solid #8DAA91;
+  border-bottom: 1px solid var(--app-text);
   transition: all 0.3s ease;
 }
 
-.contact-links a:hover {
-  color: #5a6b5c;
-  border-color: #5a6b5c;
+.app .contact-links a:hover {
+  color: var(--app-text-alt);
+  border-color: var(--app-text-alt);
 }
 
-/* Footer — Art theme */
-footer {
+.app footer {
   padding: 3rem;
   text-align: center;
-  background: #f6f8f6;
-  color: #7a8a7b;
+  background: var(--app-bg);
+  color: var(--app-muted);
   font-size: 0.85rem;
 }
 
-.site-switch-link {
-  display: block;
-  margin: 1rem auto;
-  font-size: 0.9rem;
-  color: #8DAA91;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.site-switch-link:hover {
-  color: #5a6b5c;
-}
-
-.easter-egg-link {
+.app .easter-egg-link {
   display: block;
   margin: 1.5rem auto 0;
   background: none;
   border: none;
   font-family: inherit;
   font-size: 0.75rem;
-  color: #7a8a7b;
+  color: var(--app-muted);
   cursor: pointer;
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
 
-.easter-egg-link:hover {
+.app .easter-egg-link:hover {
   opacity: 1;
 }
 
-.artist-thesis {
+.app .artist-thesis {
   max-width: 600px;
   margin: 2rem auto 0;
   text-align: left;
   padding: 2rem 0;
-  border-left: 2px solid #c5d5c6;
+  border-left: 2px solid var(--app-border);
   padding-left: 1.5rem;
   overflow: hidden;
 }
 
-.artist-thesis h3 {
+.app .artist-thesis h3 {
   font-size: 1.2rem;
   margin: 0 0 1rem;
-  color: #8DAA91;
+  color: var(--app-text);
 }
 
-.artist-thesis p {
+.app .artist-thesis p {
   font-size: 0.9rem;
   line-height: 1.7;
-  color: #5a6b5c;
+  color: var(--app-text-alt);
   margin: 0 0 1rem;
 }
 
-.artist-thesis p:last-child {
+.app .artist-thesis p:last-child {
   margin-bottom: 0;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
-  section {
+  .app section {
     padding: 6rem 1.5rem;
   }
 
-  .nav {
+  .app .nav {
     padding: 1rem 1.5rem;
   }
 
-  .nav-links {
+  .app .nav-links {
     gap: 1rem;
   }
 
-  .nav-links button {
+  .app .nav-links button {
     font-size: 0.85rem;
   }
 
-  .projects-grid {
+  .app .projects-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 
-  .project-overlay {
+  .app .project-overlay {
     opacity: 1;
     background: linear-gradient(
       to top,
@@ -491,15 +486,15 @@ footer {
     );
   }
 
-  .scattered-image {
+  .app .scattered-image {
     opacity: 0.5;
   }
 
-  .collection-grid {
+  .app .collection-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact-links {
+  .app .contact-links {
     flex-direction: column;
     gap: 1.5rem;
   }

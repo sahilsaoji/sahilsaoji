@@ -7,7 +7,6 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   { company: "Workday", role: "Software Engineer", period: "2024–Present", description: "Building enterprise software solutions" },
-  { company: "SVIG.ai", role: "Co-Founder", period: "2024–Present", description: "Advisory firm helping startups with strategy" },
   { company: "Founta", role: "Co-Founder", period: "2023–2024", description: "Corporate event planning platform with AI" },
   { company: "Cisco", role: "Software Engineer Intern", period: "2023", description: "Worked on network infrastructure tools" },
   { company: "ASKA", role: "Flight Software Intern", period: "2022", description: "Developed flight software for eVTOL aircraft" },

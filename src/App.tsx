@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { CustomCursor } from './components/CustomCursor';
 import { collections, standalonePhotos } from './data/photoData';
 import { softwareProjects } from './data/softwareData';
-import './App.css';
+import './pages/HomePage.css';
 
 function FloatingText({ children, scrollYProgress, offset = 0, direction = 1 }: {
   children: React.ReactNode;
