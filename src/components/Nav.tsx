@@ -22,11 +22,11 @@ export function Nav() {
         <NavLink to="/" end className="nav-link">
           <span>Home</span>
         </NavLink>
-        <NavLink to="/gallery" className="nav-link">
-          <span>Gallery</span>
+        <NavLink to="/portfolio" className="nav-link">
+          <span>Portfolio</span>
         </NavLink>
-        <NavLink to="/about" className="nav-link">
-          <span>About</span>
+        <NavLink to="/art" className="nav-link">
+          <span>Art</span>
         </NavLink>
       </div>
     </motion.nav>

@@ -1,0 +1,160 @@
+.art-section {
+  width: 100%;
+  padding: 3rem 2rem;
+}
+
+.back-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+  margin: 0 auto 2rem;
+}
+
+.back-nav:hover {
+  color: var(--text-primary);
+}
+
+.up-arrow {
+  width: 40px;
+  height: 25px;
+}
+
+.back-nav span {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.art-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.art-section h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0 0 0.5rem;
+}
+
+.art-intro {
+  color: var(--text-secondary);
+  margin: 0 0 2rem;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.collection-card {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+.collection-image {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+}
+
+.collection-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.collection-card:hover .collection-image img {
+  transform: scale(1.05);
+}
+
+.collection-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+
+.collection-name {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.collection-count {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Collection Detail */
+.collection-detail {
+  padding-top: 1rem;
+}
+
+.back-to-grid {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.back-to-grid:hover {
+  color: var(--text-primary);
+}
+
+.collection-detail h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0 0 1.5rem;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.photo-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .art-section {
+    padding: 1.5rem;
+    padding-top: 4rem;
+  }
+
+  .collections-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .photos-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}

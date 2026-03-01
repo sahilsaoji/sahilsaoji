@@ -7,11 +7,10 @@ export interface PhotoCollection {
 
 export const collections: PhotoCollection[] = [
   {
-    name: "Portraits",
-    slug: "portraits",
+    name: "Asian Caucus",
+    slug: "asian-caucus",
     cover: "Portraits/Asian Caucus/AsianCaucusPhoto-4.jpg",
     photos: [
-      // Asian Caucus
       "Portraits/Asian Caucus/AsianCaucusPhoto-2.jpg",
       "Portraits/Asian Caucus/AsianCaucusPhoto-4.jpg",
       "Portraits/Asian Caucus/AsianCaucusPhoto-8.jpg",
@@ -30,8 +29,14 @@ export const collections: PhotoCollection[] = [
       "Portraits/Asian Caucus/AsianCaucusPhoto-39.jpg",
       "Portraits/Asian Caucus/AsianCaucusPhoto-40.jpg",
       "Portraits/Asian Caucus/AsianCaucusPhoto-41.jpg",
-      "Portraits/Asian Caucus/AsianCaucusPhoto-42.jpg",
-      // Ishaan
+      "Portraits/Asian Caucus/AsianCaucusPhoto-42.jpg"
+    ]
+  },
+  {
+    name: "Ishaan",
+    slug: "ishaan",
+    cover: "Portraits/Ishaan/IshaanPhotos-4.jpg",
+    photos: [
       "Portraits/Ishaan/IshaanPhotos-4.jpg",
       "Portraits/Ishaan/IshaanPhotos-7.jpg",
       "Portraits/Ishaan/IshaanPhotos-8.jpg",
@@ -52,8 +57,14 @@ export const collections: PhotoCollection[] = [
       "Portraits/Ishaan/IshaanPhotos-35.jpg",
       "Portraits/Ishaan/IshaanPhotos-37.jpg",
       "Portraits/Ishaan/IshaanPhotos-38.jpg",
-      "Portraits/Ishaan/IshaanPhotos-39.jpg",
-      // Rachel
+      "Portraits/Ishaan/IshaanPhotos-39.jpg"
+    ]
+  },
+  {
+    name: "Rachel",
+    slug: "rachel",
+    cover: "Portraits/Rachel/print.jpg",
+    photos: [
       "Portraits/Rachel/print.jpg",
       "Portraits/Rachel/print2.jpg",
       "Portraits/Rachel/print3.jpg",

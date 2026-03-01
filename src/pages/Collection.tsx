@@ -48,8 +48,8 @@ export function Collection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Link to="/gallery" className="back-link">
-            <span className="back-arrow">←</span> Back to Gallery
+          <Link to="/art" className="back-link">
+            <span className="back-arrow">←</span> Back to Art
           </Link>
         </motion.div>
 
@@ -67,7 +67,7 @@ export function Collection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          {collection.photos.length} photos
+          {collection.photos.length} pieces
         </motion.p>
 
         <div className="photos-grid">

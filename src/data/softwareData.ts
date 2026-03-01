@@ -1,3 +1,18 @@
+export interface Experience {
+  company: string;
+  role: string;
+  period: string;
+  description?: string;
+}
+
+export const experiences: Experience[] = [
+  { company: "Workday", role: "Software Engineer", period: "2024–Present", description: "Building enterprise software solutions" },
+  { company: "SVIG.ai", role: "Co-Founder", period: "2024–Present", description: "Advisory firm helping startups with strategy" },
+  { company: "Founta", role: "Co-Founder", period: "2023–2024", description: "Corporate event planning platform with AI" },
+  { company: "Cisco", role: "Software Engineer Intern", period: "2023", description: "Worked on network infrastructure tools" },
+  { company: "ASKA", role: "Flight Software Intern", period: "2022", description: "Developed flight software for eVTOL aircraft" },
+];
+
 export interface SoftwareProject {
   name: string;
   image: string;
@@ -35,5 +50,11 @@ export const softwareProjects: SoftwareProject[] = [
     image: "Software/MomsRDope.png",
     description: "Built and scaled a T-shirt brand to $3,000 in profit (donated to the Equal Justice Initiative) and grew social media presence to 10,000 followers.",
     link: "http://momsrdope.com/"
+  },
+  {
+    name: "Svig.ai",
+    image: "Software/Screenshot 2026-02-28 at 6.33.05 PM.png",
+    description: "Helped build the front-end and website for Svig.ai, an advisory firm based in the Bay Area.",
+    link: "https://svig.ai/"
   }
 ];

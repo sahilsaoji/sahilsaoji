@@ -1,16 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
-:root {
-  --bg-primary: #F0F7EE;
-  --bg-secondary: #C4D7F2;
-  --bg-accent: #AFDEDC;
-  --text-primary: #776871;
-  --text-secondary: #91A8A4;
-  --text-muted: #91A8A4;
-  --border-color: #C4D7F2;
-  --accent: #776871;
-  --accent-light: #91A8A4;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 *,
 *::before,
@@ -20,15 +8,14 @@
 
 body {
   margin: 0;
-  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-  background: var(--bg-primary);
-  color: var(--text-primary);
+  font-family: 'Playfair Display', Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
 }
 
 html {
@@ -50,8 +37,7 @@ img {
 }
 
 ::selection {
-  background: var(--bg-accent);
-  color: var(--text-primary);
+  background: rgba(141, 170, 145, 0.3);
 }
 
 /* Scrollbar */
@@ -60,10 +46,11 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
+  background: #e8efe8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent);
+  background: #8DAA91;
   border-radius: 3px;
 }
+

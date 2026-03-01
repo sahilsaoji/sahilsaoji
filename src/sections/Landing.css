@@ -1,0 +1,149 @@
+.landing {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.landing-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.landing-image {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--tea-green);
+}
+
+.landing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landing h1 {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+}
+
+.landing-tagline {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0 0 0.75rem;
+}
+
+.landing-bio {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+}
+
+.landing-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+}
+
+.landing-socials a {
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.landing-socials a:hover {
+  color: var(--text-primary);
+}
+
+.landing-socials span {
+  color: var(--text-muted);
+}
+
+.navigation-paths {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.path-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.path-zone:hover {
+  color: var(--text-primary);
+}
+
+.left-zone {
+  align-items: flex-end;
+}
+
+.right-zone {
+  align-items: flex-start;
+}
+
+.curved-arrow {
+  width: 140px;
+  height: 70px;
+}
+
+.path-label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.left-zone .path-label {
+  align-items: flex-end;
+}
+
+.right-zone .path-label {
+  align-items: flex-start;
+}
+
+.label-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.label-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.nav-hint {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 640px) {
+  .navigation-paths {
+    gap: 2rem;
+  }
+
+  .curved-arrow {
+    width: 100px;
+    height: 50px;
+  }
+}
